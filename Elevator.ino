@@ -18,14 +18,17 @@ void loop() {
   elevator.loop();
 
   if (elevator.btnUp.isPressed()) {
+		Serial.println("Up button pressed");
     elevator.moveUp();
   }
 
   if (elevator.btnDown.isPressed()) {
+		Serial.println("Down button pressed");
     elevator.moveDown();
   }
 
   if (elevator.btnStop.isPressed()) {
+		Serial.println("Stop button pressed");
     elevator.stop();
   }
 }
